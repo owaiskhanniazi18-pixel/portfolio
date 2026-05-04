@@ -8,12 +8,9 @@
     <meta name="author" content="Muhammad Owais">
     <title>RankScribe | Content Writing & SEO Specialist</title>
     
-    <!-- Open Graph -->
     <meta property="og:title" content="RankScribe | Professional Content Writing & SEO">
     <meta property="og:description" content="Content that Ranks. Words that Convert.">
-    <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourdomain.com">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=RankScribe">
 
     <link rel="icon" href="https://via.placeholder.com/32x32/0066cc/ffffff?text=RS" type="image/x-icon">
 
@@ -21,7 +18,6 @@
         :root {
             --primary: #0066cc;
             --dark: #1a1a1a;
-            --light: #f8f9fa;
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -51,11 +47,7 @@
             align-items: center;
         }
         
-        .logo {
-            font-size: 1.9rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
+        .logo { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.5px; }
         
         .nav-links {
             display: flex;
@@ -67,14 +59,13 @@
             color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
         }
         
         .nav-links a:hover { color: #00ccff; }
         
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200') center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -83,15 +74,8 @@
             margin-top: 70px;
         }
         
-        .hero h1 {
-            font-size: 3.6rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.45rem;
-            margin-bottom: 2.5rem;
-        }
+        .hero h1 { font-size: 3.6rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.45rem; }
         
         .btn {
             display: inline-block;
@@ -101,6 +85,7 @@
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
+            margin-top: 1.5rem;
             transition: all 0.3s;
         }
         
@@ -119,32 +104,35 @@
             color: var(--dark);
         }
         
-        .services-grid {
+        .services-grid, .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
         }
         
-        .service-card {
+        .service-card, .work-card {
             background: white;
             border-radius: 12px;
-            padding: 2.5rem;
+            padding: 2rem;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s;
         }
         
-        .service-card:hover { transform: translateY(-10px); }
+        .service-card:hover, .work-card:hover { transform: translateY(-10px); }
         
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+        .work-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
         }
         
         footer {
             background: var(--dark);
             color: white;
             padding: 4rem 0 2rem;
+            text-align: center;
         }
         
         .contact-form {
@@ -162,7 +150,6 @@
             margin-bottom: 1rem;
             border: 1px solid #ddd;
             border-radius: 8px;
-            font-size: 1rem;
         }
         
         @media (max-width: 768px) {
@@ -171,7 +158,7 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+
     <header>
         <nav>
             <div class="logo">RankScribe</div>
@@ -187,11 +174,11 @@
 
     <!-- Hero -->
     <section id="home" class="hero">
-        <div class="hero-content" style="max-width: 850px; padding: 2rem;">
+        <div style="max-width: 850px; padding: 2rem; text-align:center;">
             <h1>Content that Ranks.<br>Words that Convert.</h1>
-            <p style="font-size: 1.5rem; margin-bottom: 2rem;">Professional Content Writing & SEO Services</p>
-            <p style="font-size: 1.3rem;">Specializing in AI • Healthcare • Technology</p>
-            <a href="#contact" class="btn" style="margin-top: 1.5rem;">Get Your Content Strategy</a>
+            <p>Professional Content Writing & SEO Services</p>
+            <p style="font-size:1.3rem; margin-top:1rem;">Specializing in AI • Healthcare • Technology</p>
+            <a href="#contact" class="btn">Start a Project</a>
         </div>
     </section>
 
@@ -202,31 +189,53 @@
             <div class="services-grid">
                 <div class="service-card">
                     <h3>SEO Blog Writing</h3>
-                    <p>High-ranking, keyword-optimized articles that drive consistent organic traffic and leads.</p>
+                    <p>High-ranking, in-depth articles optimized for search engines that drive organic traffic and leads.</p>
                 </div>
                 <div class="service-card">
-                    <h3>AI & Tech Content</h3>
-                    <p>Clear, authoritative content on Artificial Intelligence and emerging technologies.</p>
+                    <h3>AI & Technology Content</h3>
+                    <p>Clear, authoritative, and engaging content on Artificial Intelligence and emerging technologies.</p>
                 </div>
                 <div class="service-card">
                     <h3>Healthcare & Medical Writing</h3>
-                    <p>Accurate, engaging, and trustworthy content for healthcare and health-tech businesses.</p>
+                    <p>Accurate, trustworthy, and reader-friendly content for healthcare and health-tech companies.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work -->
+    <!-- Recent Work - Updated & Rich Section -->
     <section id="work" style="background: #f8f9fa;">
         <div class="container">
             <h2>Recent Work</h2>
-            <!-- You can add your real samples here -->
-            <p style="text-align:center; font-size:1.1rem;">High-quality SEO articles & client projects available on request.</p>
+            <div class="portfolio-grid">
+
+                <div class="work-card">
+                    <img src="https://picsum.photos/id/1015/600/300" alt="AI in Healthcare">
+                    <h3>The Role of Artificial Intelligence in Modern Healthcare</h3>
+                    <p>Exploring how AI is transforming diagnostics, patient care, and medical operations.</p>
+                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_why-ai-is-a-game-changer-for-modern-healthcare-activity-7418125059103539200-Ai3M" target="_blank" style="color:var(--primary); font-weight:500;">Read Article →</a>
+                </div>
+
+                <div class="work-card">
+                    <img src="https://picsum.photos/id/201/600/300" alt="AI in Radiology">
+                    <h3>From Images to Insights: The Role of AI in Radiology</h3>
+                    <p>How artificial intelligence is revolutionizing medical imaging and diagnosis accuracy.</p>
+                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_from-images-to-insights-the-role-of-ai-in-activity-7426630411323105280-SkaF" target="_blank" style="color:var(--primary); font-weight:500;">Read Article →</a>
+                </div>
+
+                <div class="work-card">
+                    <img src="https://picsum.photos/id/866/600/300" alt="AI in Surgery">
+                    <h3>The Future of Surgery: How AI is Enhancing Precision and Safety</h3>
+                    <p>Advanced applications of AI in surgical procedures and robotic assistance.</p>
+                    <a href="#" target="_blank" style="color:var(--primary); font-weight:500;">Read Article →</a>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="about" style="background:#f8f9fa;">
+    <section id="about">
         <div class="container">
             <h2>About RankScribe</h2>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
@@ -234,48 +243,46 @@
                     <img src="https://picsum.photos/id/64/600/600" alt="Muhammad Owais" style="width:100%; border-radius:12px;">
                 </div>
                 <div>
-                    <p style="font-size:1.2rem;">RankScribe is led by Muhammad Owais, a professional content writer and SEO specialist from Multan, Pakistan.</p>
-                    <p>We create SEO-optimized, high-converting content for forward-thinking businesses in AI, Healthcare, and Technology.</p>
-                    <a href="#contact" class="btn" style="margin-top:2rem;">Start a Project</a>
+                    <p style="font-size:1.2rem;">RankScribe is founded by <strong>Muhammad Owais</strong>, a passionate Content Writer and SEO Specialist from Multan, Pakistan.</p>
+                    <p>I help businesses in AI, Healthcare, and Technology create powerful, SEO-optimized content that builds authority and drives real results.</p>
+                    <a href="#contact" class="btn">Work With Me</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" style="background:#f8f9fa;">
         <div class="container">
-            <h2>Let's Grow Your Business With Content</h2>
+            <h2>Let's Create High-Impact Content Together</h2>
             <div class="contact-form">
                 <form action="https://formspree.io/f/your-form-id" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Business Email" required>
-                    <input type="text" name="subject" placeholder="Project Type (SEO Blog, AI Article, etc.)">
-                    <textarea name="message" rows="6" placeholder="Tell us about your content needs..." required></textarea>
-                    <button type="submit" class="btn" style="width:100%; padding:16px;">Send Message</button>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Project Type (e.g., SEO Blog, AI Article)">
+                    <textarea name="message" rows="6" placeholder="Describe your project..." required></textarea>
+                    <button type="submit" class="btn" style="width:100%;">Send Message</button>
                 </form>
             </div>
-            <p style="text-align:center; margin-top:2rem;">
-                Or email directly: <strong>owaiskhanniazi18@gmail.com</strong>
+            <p style="text-align:center; margin-top: 2rem; color:#555;">
+                Or email me directly: <strong>owaiskhanniazi18@gmail.com</strong>
             </p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p style="text-align:center;">© 2026 RankScribe. All Rights Reserved.</p>
+            <p>© 2026 RankScribe • Professional Content Writing & SEO Services</p>
         </div>
     </footer>
 
     <script>
+        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 if (this.getAttribute('href') !== '#') {
                     e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });
