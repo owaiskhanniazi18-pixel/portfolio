@@ -3,154 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Owais - Professional Content Writer & SEO Specialist">
+    <meta name="description" content="Muhammad Owais - Professional Content Writer & SEO Specialist in AI, Healthcare & Technology">
     <title>Muhammad Owais | Professional Content Writer</title>
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <style>
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .hero-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.7;
+            color: #222;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            padding: 110px 20px 90px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .btn {
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body>
 
     <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-600">Owais.</h1>
-            <div class="space-x-8 hidden md:block">
-                <a href="#services" class="hover:text-blue-600 transition">Services</a>
-                <a href="#samples" class="hover:text-blue-600 transition">Samples</a>
-                <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+    <nav style="background:white; box-shadow:0 4px 12px rgba(0,0,0,0.08); position:sticky; top:0; z-index:100;">
+        <div class="container" style="padding:18px 0; display:flex; justify-content:space-between; align-items:center;">
+            <h1 style="font-size:29px; font-weight:700; color:#1e40af;">Owais.</h1>
+            <div style="display:flex; gap:35px; font-weight:500;">
+                <a href="#services" style="color:#1f2937; text-decoration:none;">Services</a>
+                <a href="#samples" style="color:#1f2937; text-decoration:none;">Samples</a>
+                <a href="#contact" style="color:#1f2937; text-decoration:none;">Contact</a>
             </div>
-            <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-blue-700 transition">
-                Hire Me
-            </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-bg text-white py-24">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
             <div>
-                <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                    I turn words into <span class="text-yellow-300">traffic &amp; sales</span>
+                <h2 style="font-size:3rem; line-height:1.15; margin-bottom:24px;">
+                    I turn words into <span style="color:#fde047;">traffic &amp; sales</span>
                 </h2>
-                <p class="text-xl mb-8 text-blue-100">
+                <p style="font-size:1.35rem; margin-bottom:35px;">
                     Professional Content Writer &amp; SEO Specialist<br>
-                    Specializing in AI, Healthcare &amp; Technology.
+                    Specializing in <strong>AI, Healthcare &amp; Technology</strong>
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#contact" class="bg-white text-blue-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition">
-                        Let's Work Together
-                    </a>
-                    <a href="#samples" class="border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition">
-                        View My Samples →
-                    </a>
-                </div>
+                <a href="#contact" class="btn" style="background:white; color:#1e40af; font-size:1.1rem;">Hire Me Now</a>
             </div>
-            <div class="flex justify-center">
+            
+            <div style="text-align:center;">
                 <img src="profile.jpg" 
-                     alt="Muhammad Owais - Professional Content Writer"
-                     class="w-80 h-80 object-cover rounded-3xl shadow-2xl border-4 border-white/30"
-                     onerror="this.src='https://via.placeholder.com/400x400/3b82f6/ffffff?text=Owais';">
+                     alt="Muhammad Owais"
+                     style="width:340px; height:340px; object-fit:cover; border-radius:20px; border:8px solid rgba(255,255,255,0.25); box-shadow:0 20px 40px rgba(0,0,0,0.25);">
             </div>
         </div>
     </section>
 
     <!-- Services -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">My Services</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-3xl hover:shadow-xl transition">
-                    <h3 class="text-2xl font-semibold mb-4">SEO Blog Writing</h3>
-                    <p class="text-gray-600">In-depth, research-backed articles that rank on Google.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-3xl hover:shadow-xl transition">
-                    <h3 class="text-2xl font-semibold mb-4">AI &amp; Tech Content</h3>
-                    <p class="text-gray-600">Specialized content on Artificial Intelligence.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-3xl hover:shadow-xl transition">
-                    <h3 class="text-2xl font-semibold mb-4">Healthcare Content</h3>
-                    <p class="text-gray-600">Medical, radiology &amp; health-tech writing.</p>
-                </div>
+    <section id="services" style="padding:90px 20px; background:#f8fafc;">
+        <div class="container">
+            <h2 style="text-align:center; font-size:2.6rem; margin-bottom:50px;">My Services</h2>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:30px;">
+                <div class="card"><h3 style="font-size:1.6rem; margin-bottom:12px;">SEO Blog Writing</h3><p>High-ranking, research-driven articles.</p></div>
+                <div class="card"><h3 style="font-size:1.6rem; margin-bottom:12px;">AI &amp; Tech Content</h3><p>Clear, engaging content on Artificial Intelligence.</p></div>
+                <div class="card"><h3 style="font-size:1.6rem; margin-bottom:12px;">Healthcare Content</h3><p>Medical, Radiology &amp; Health-tech writing.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Writing Samples -->
-    <section id="samples" class="py-20 bg-gray-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-4">Featured Writing Samples</h2>
-            <p class="text-center text-gray-600 mb-12">LinkedIn Articles on AI &amp; Healthcare</p>
+    <!-- Samples -->
+    <section id="samples" style="padding:90px 20px;">
+        <div class="container">
+            <h2 style="text-align:center; font-size:2.6rem; margin-bottom:20px;">Featured Samples</h2>
+            <p style="text-align:center; margin-bottom:50px; color:#555;">AI &amp; Healthcare Articles on LinkedIn</p>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
-                    <h3 class="font-semibold text-xl mb-3">The Role of Artificial Intelligence in Surgery</h3>
-                    <p class="text-gray-600 mb-6">Precision, Safety, and the Future of Surgical Care</p>
-                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_the-role-of-artificial-intelligence-activity-7414188992608268288--b6f" target="_blank" class="text-blue-600 font-medium hover:underline">Read on LinkedIn →</a>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:25px;">
+                <div class="card">
+                    <h3>The Role of Artificial Intelligence in Surgery</h3>
+                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_the-role-of-artificial-intelligence-activity-7414188992608268288--b6f" target="_blank" style="color:#2563eb; margin-top:12px; display:block;">Read →</a>
                 </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
-                    <h3 class="font-semibold text-xl mb-3">Why AI Is a Game-Changer for Modern Healthcare</h3>
-                    <p class="text-gray-600 mb-6">Predictive care, better diagnostics &amp; personalized treatment</p>
-                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_why-ai-is-a-game-changer-for-modern-healthcare-activity-7418125059103539200-Ai3M" target="_blank" class="text-blue-600 font-medium hover:underline">Read on LinkedIn →</a>
+                <div class="card">
+                    <h3>Why AI Is a Game-Changer for Modern Healthcare</h3>
+                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_why-ai-is-a-game-changer-for-modern-healthcare-activity-7418125059103539200-Ai3M" target="_blank" style="color:#2563eb; margin-top:12px; display:block;">Read →</a>
                 </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
-                    <h3 class="font-semibold text-xl mb-3">From Images to Insights: The Role of AI in Radiology</h3>
-                    <p class="text-gray-600 mb-6">How AI is transforming medical imaging</p>
-                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_from-images-to-insights-the-role-of-ai-in-activity-7426630411323105280-SkaF" target="_blank" class="text-blue-600 font-medium hover:underline">Read on LinkedIn →</a>
+                <div class="card">
+                    <h3>From Images to Insights: The Role of AI in Radiology</h3>
+                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_from-images-to-insights-the-role-of-ai-in-activity-7426630411323105280-SkaF" target="_blank" style="color:#2563eb; margin-top:12px; display:block;">Read →</a>
                 </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
-                    <h3 class="font-semibold text-xl mb-3">AI in Radiology Doesn’t Fail Because of Technology</h3>
-                    <p class="text-gray-600 mb-6">It fails because of poor communication</p>
-                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_ai-in-radiology-doesnt-fail-because-of-technology-activity-7422988709936959488-dbjN" target="_blank" class="text-blue-600 font-medium hover:underline">Read on LinkedIn →</a>
+                <div class="card">
+                    <h3>AI in Radiology Doesn’t Fail Because of Technology</h3>
+                    <a href="https://www.linkedin.com/posts/muhammad-owais-niazi-5171b5395_ai-in-radiology-doesnt-fail-because-of-technology-activity-7422988709936959488-dbjN" target="_blank" style="color:#2563eb; margin-top:12px; display:block;">Read →</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-8">About Me</h2>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                Hi, I'm Muhammad Owais, a professional content writer specializing in AI, Healthcare, and Technology. 
-                I create high-quality, SEO-optimized content that engages readers and ranks well.
-            </p>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-20 bg-gray-900 text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-8">Let's Create Great Content Together</h2>
-            <p class="text-xl mb-10">Feel free to reach out anytime.</p>
-            
-            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="mailto:owaiskhanniazi18@gmail.com" 
-                   class="bg-blue-600 hover:bg-blue-700 px-8 py-5 rounded-full text-lg font-medium transition flex items-center gap-3">
-                    <i class="fas fa-envelope"></i>
-                    owaiskhanniazi18@gmail.com
+    <section id="contact" style="padding:90px 20px; background:#0f172a; color:white; text-align:center;">
+        <div class="container">
+            <h2 style="font-size:2.5rem; margin-bottom:30px;">Get In Touch</h2>
+            <div style="display:flex; flex-direction:column; gap:18px; align-items:center; max-width:500px; margin:0 auto;">
+                <a href="mailto:owaiskhanniazi18@gmail.com" class="btn" style="background:#3b82f6; color:white; width:100%; max-width:380px;">
+                    📧 owaiskhanniazi18@gmail.com
                 </a>
-                
-                <a href="tel:03087068851" 
-                   class="bg-green-600 hover:bg-green-700 px-8 py-5 rounded-full text-lg font-medium transition flex items-center gap-3">
-                    <i class="fas fa-phone"></i>
-                    0308 7068851
+                <a href="tel:03087068851" class="btn" style="background:#22c55e; color:white; width:100%; max-width:380px;">
+                    📱 0308 7068851
                 </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-black text-gray-400 py-8 text-center">
-        <p>© 2026 Muhammad Owais. All Rights Reserved.</p>
+    <footer style="text-align:center; padding:35px; background:#020617; color:#64748b;">
+        © 2026 Muhammad Owais | Professional Content Writer
     </footer>
 
 </body>
