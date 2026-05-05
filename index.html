@@ -3,73 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RankScribe - Professional Content Writing & SEO Services by Muhammad Owais">
-    <title>RankScribe | Content Writing & SEO Specialist</title>
+    <meta name="description" content="RankScribe - Professional Content Writing & SEO Services by Muhammad Owais. Expert in AI, Healthcare, Technology & SEO Content.">
+    <title>RankScribe | Professional Content Writer & SEO Specialist</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        .product-card, .service-card { transition: all 0.4s ease; }
+        .product-card:hover, .service-card:hover { transform: translateY(-8px); }
+    </style>
 </head>
 <body class="bg-gray-50">
 
-    <!-- Previous sections (Header, Hero, Services, Work, About) remain the same -->
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-indigo-700">RankScribe</h1>
+            <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
+                <a href="#services" class="hover:text-indigo-600">Services</a>
+                <a href="#work" class="hover:text-indigo-600">Work</a>
+                <a href="#about" class="hover:text-indigo-600">About</a>
+                <a href="#contact" class="hover:text-indigo-600">Contact</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone"></i>
+                <span class="font-medium">0308 7068851</span>
+            </div>
+        </div>
+    </header>
 
-    <!-- Fixed Contact Section -->
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-gray-900 to-black text-white py-28">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Content that Ranks.<br>Words that Convert.</h2>
+            <p class="text-2xl text-gray-300 mb-10">Professional Content Writing & SEO Services</p>
+            <p class="text-xl mb-12">Specializing in AI • Healthcare • Technology</p>
+            <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 px-10 py-5 rounded-full text-lg font-semibold inline-block">
+                Get Your Content Strategy
+            </a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card bg-white border border-gray-100 p-8 rounded-3xl shadow">
+                    <h3 class="text-2xl font-semibold mb-4">SEO Blog Writing</h3>
+                    <p class="text-gray-600">High-ranking, keyword-optimized articles that drive organic traffic and leads.</p>
+                </div>
+                <div class="service-card bg-white border border-gray-100 p-8 rounded-3xl shadow">
+                    <h3 class="text-2xl font-semibold mb-4">AI & Tech Content</h3>
+                    <p class="text-gray-600">Clear, authoritative content on Artificial Intelligence and emerging technologies.</p>
+                </div>
+                <div class="service-card bg-white border border-gray-100 p-8 rounded-3xl shadow">
+                    <h3 class="text-2xl font-semibold mb-4">Healthcare Content</h3>
+                    <p class="text-gray-600">Accurate and engaging medical, radiology, and health-tech writing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Work -->
+    <section id="work" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Recent Work</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow">
+                    <img src="https://picsum.photos/id/201/600/400" class="w-full h-56 object-cover" alt="AI Healthcare">
+                    <div class="p-6">
+                        <h3 class="font-semibold">Why AI is a Game Changer for Modern Healthcare</h3>
+                        <a href="#" class="text-indigo-600 mt-4 inline-block">Read Article →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow">
+                    <img src="https://picsum.photos/id/866/600/400" class="w-full h-56 object-cover" alt="AI Radiology">
+                    <div class="p-6">
+                        <h3 class="font-semibold">The Role of AI in Radiology</h3>
+                        <a href="#" class="text-indigo-600 mt-4 inline-block">Read Article →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow">
+                    <img src="https://picsum.photos/id/1015/600/400" class="w-full h-56 object-cover" alt="AI Surgery">
+                    <div class="p-6">
+                        <h3 class="font-semibold">AI in Surgery: Precision & Safety</h3>
+                        <a href="#" class="text-indigo-600 mt-4 inline-block">Read Article →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Fixed) -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-4">Let's Create High-Impact Content Together</h2>
-            <p class="text-center text-gray-600 mb-12">Share your project details and get a response within 24 hours</p>
+            <p class="text-center text-gray-600 mb-12">Share your project details. I usually reply within 24 hours.</p>
             
-            <form id="contactForm" class="space-y-6 bg-white shadow-lg p-10 rounded-3xl">
+            <form id="contactForm" class="space-y-6 bg-white shadow-xl p-10 rounded-3xl border">
                 <div>
                     <label class="block text-sm font-medium mb-2">Your Name *</label>
-                    <input type="text" name="name" required
-                           class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-indigo-600">
+                    <input type="text" name="name" required class="w-full px-6 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-indigo-600">
                 </div>
                 
                 <div>
                     <label class="block text-sm font-medium mb-2">Email Address *</label>
-                    <input type="email" name="email" required
-                           class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-indigo-600">
+                    <input type="email" name="email" required class="w-full px-6 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-indigo-600">
                 </div>
                 
                 <div>
                     <label class="block text-sm font-medium mb-2">Project Type</label>
-                    <input type="text" name="project" placeholder="SEO Blog, AI Article, Healthcare Content etc."
-                           class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-indigo-600">
+                    <input type="text" name="project" placeholder="SEO Blog, AI Article, Healthcare Content..." 
+                           class="w-full px-6 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-indigo-600">
                 </div>
                 
                 <div>
-                    <label class="block text-sm font-medium mb-2">Project Details *</label>
-                    <textarea name="message" rows="6" required
-                              class="w-full px-5 py-4 border border-gray-300 rounded-3xl focus:outline-none focus:border-indigo-600"
-                              placeholder="Tell me about your content needs..."></textarea>
+                    <label class="block text-sm font-medium mb-2">Tell me about your project *</label>
+                    <textarea name="message" rows="6" required 
+                              class="w-full px-6 py-4 border border-gray-300 rounded-3xl focus:outline-none focus:border-indigo-600"
+                              placeholder="Describe your requirements..."></textarea>
                 </div>
                 
-                <button type="submit"
+                <button type="submit" 
                         class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-5 rounded-3xl text-lg transition">
                     Send Message
                 </button>
             </form>
             
-            <div class="text-center mt-10">
-                <p class="text-gray-600">Or reach me directly:</p>
-                <p class="text-xl font-semibold mt-2">0308 7068851</p>
+            <div class="text-center mt-10 space-y-3">
+                <p class="text-gray-600">Or contact me directly:</p>
+                <p class="text-2xl font-bold">0308 7068851</p>
                 <p class="text-gray-600">owaiskhanniazi18@gmail.com</p>
             </div>
         </div>
     </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center">
+        <p>© 2026 RankScribe • Muhammad Owais • Multan, Pakistan</p>
+    </footer>
 
     <script>
         // Working Contact Form
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const name = document.querySelector('input[name="name"]').value;
+            const name = document.querySelector('input[name="name"]').value || "there";
             
-            alert(`Thank you ${name}!\n\nYour message has been received.\nI will contact you shortly on 03087068851.`);
+            alert(`Thank you ${name}!\n\nYour message has been received successfully.\nI will contact you soon on 03087068851.`);
             
-            // Reset form
             this.reset();
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
     </script>
 </body>
